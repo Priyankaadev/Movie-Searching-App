@@ -1,9 +1,28 @@
-:root{
+:root{  /* dark mode */
     --prime-blue : #00A0D6;
-    --dull-blue: #364f65;
+    --navbar-bg-border: #364f65;
     --dark-blue: #191E25;
-    --light-prime-grey: #32373e;
+     --movie-detail: white;
+    --font-color : black;
+    --card-background: whitesmoke;
+    --border-chips-color: #00A0D6;}
+
+[data-theme='light']{ 
+    /* light mode  */
+     --prime-blue : #00A0D6;
+    --navbar-bg-border: #364f65;
+    --card-background:#364f65;
+    --font-color : white;
+    --dark-blue: white;
+    --movie-detail: black;
+    --background-color: white;
+    --border-chips-color: #32373e;
 }
 body{
+    margin: 0;
+    padding: 0;
+}
+
+#app-wrapper{
     background-color: var(--dark-blue);
 }

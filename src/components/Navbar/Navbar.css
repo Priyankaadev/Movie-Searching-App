@@ -1,16 +1,21 @@
 .navbar-wrapper {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid var(--dull-blue);
+    justify-content: space-around;
+    border: 1px solid var(--navbar-bg-border);
     padding: 1rem;
     align-items: center;
-    background-color: var(--dull-blue);
+    background-color: var(--navbar-bg-border);
     color: white;
 }
 .movie-base-title>a{
     color: white;
     margin-left: 1rem;
     text-decoration: none;
+}
+.theme-icon{
+    font-size: x-large;
+    cursor: pointer;
+
 }
 
 .navbar-wrapper div:nth-child(1) {
@@ -28,8 +33,8 @@
     width: 100%;
     height: 25px;
     padding: 10px;
-    color: white;
-    background-color: var(--light-prime-grey);
+    color: black;
+    background-color: #cad7de;
     border: none;
     border-radius: 5px;
 }
@@ -47,7 +52,7 @@
     width: 100%;
     max-height: 300px;
     overflow-y: scroll;
-    border: 1px solid var(--light-prime-grey);
+    border: 1px solid var(--border-chips-color);
 
 }
 #result-list> .autocomplete-result{
@@ -59,6 +64,6 @@
 }
 
 .autocomplete-result:hover{
-    background-color:grey;
-    color: whitesmoke;
+    background-color:#cad7de;
+ 
 }

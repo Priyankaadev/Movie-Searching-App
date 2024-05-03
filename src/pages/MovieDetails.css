@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: start;
     font-size: x-large;
-    color:antiquewhite;
+    color:var(--movie-detail);
     font-weight: 300;
     margin-top: 5rem;
 
@@ -32,9 +32,10 @@
 
 }
 .genre{
-    border: 1px solid var(--dull-blue);
+    border: 1px solid var(--navbar-bg-border);
     padding: 0.4rem;
+    color: var(--font-color);
     margin: 0.5rem;
     border-radius: 15px;
-    background-color: var(--light-prime-grey);
+    background-color: var(--border-chips-color);
 }
