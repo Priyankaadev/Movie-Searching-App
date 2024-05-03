@@ -6,7 +6,7 @@ import './Home.css'
 
 function Home() {
 
-const {movieList} = useMovieList("harry", "hitman", "space");
+    const { movieList } = useMovieList("harry", "hitman", "space");
 
     return (
         <>
@@ -14,9 +14,12 @@ const {movieList} = useMovieList("harry", "hitman", "space");
             {/*Mpvielist */}
             {/*pagination buttons */}
             <div className="movie-card-wrapper">
-                {movieList.map(movie => <MovieCard key={movie.imdbID}
+                { movieList.length >0 && movieList.map(movie => <MovieCard
+                    key={movie.imdbID}
+                    id={movie.imdbID}
                     {...movie}
                 />)}
+               
             </div>
         </>
     )
